@@ -78,7 +78,7 @@ $(function(){
 	})
 	$('.banner-dot>li').mouseenter(function(){
 		$(this).addClass('circle').siblings().removeClass('circle')
-		$(this).children().css('background-color','transparent').parents().siblings().children().css('background-color','#fff')
+		$(this).children('i').css('background-color','transparent').parents('li').siblings('li').children('i').css('background-color','#fff')
 		var dot=$(this).index()
 		o=dot;
 		p=dot;

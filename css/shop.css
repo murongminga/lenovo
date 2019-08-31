@@ -33,6 +33,26 @@ h1>img{
 	width: 100%;
 	height: 100%;
 }
+.logo-img2{
+	display: none;
+}
+@media(max-width: 1300px){
+	h1{
+		float: left;
+		height: 50px;
+		width: 50px;
+		margin-right: 5px;
+	}
+	.logo-img{
+		display: none;
+	}
+	.logo-img2{
+		display: block;
+	}
+	.header2-nav>li:nth-child(1){
+		margin-left: 51px;
+	}	
+}
 .nav{
 	float: left;
 }
@@ -333,6 +353,51 @@ section>.container{
 	float: left;
 	margin-right: 12px;
 	margin-top:7px;
+	position: relative;
+}
+.flashkill-time>img:nth-child(2){
+	display: none;
+}
+.flashkill-title{
+	position: absolute;
+	top: 145px;
+	left: 50%;
+	margin-left: -37px;
+	font-size: 21px;
+	color: #fff;
+	font-weight: 300;
+
+}
+.flashkill-text{
+	position: absolute;
+	top: 255px;
+	left: 50%;
+	font-size: 15px;
+	color: #fff;
+	margin-left: -30px;
+}
+.flashkill-text2{
+	position: absolute;
+	top: 255px;
+	left: 50%;
+	font-size: 15px;
+	color: #fff;
+	margin-left: -60px;
+}
+.flashkill-overtime{
+	position: absolute;
+	top: 316px;
+	left: 52%;
+	font-size: 20px;
+	font-weight: 550;
+	color: black;
+	margin-left: -60px;
+}
+.fk-hour{
+	margin-right: 15px;
+}
+.fk-minutes{
+	margin-right: 15px;
 }
 .flashkill-box{
 	float: left;
@@ -630,8 +695,16 @@ footer a{
 	top: 50%;
 	right: 5px;
 	margin-top: -206.5px;
+	display: none;
 }
 .aside-right-li a{
+	display: inline-block;
+	width: 47px;
+	height: 55px;
+	background-image: url('../images/15488017-b115-444c-8eae-2633a9906b31.png');
+	background-repeat: no-repeat;
+}
+.aside-right-li>span{
 	display: inline-block;
 	width: 47px;
 	height: 55px;
@@ -685,7 +758,6 @@ footer a{
 }
 .aside-hid{
 	position: absolute;
-	background-color: red;
 }
 .a-h-1{
 	top: 0px;
