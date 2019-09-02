@@ -200,7 +200,7 @@ $(function(){
 	  	}else{
 	  		$('.fk-hour').html(hour)
 	  	}
-	  	if (seconds<'10'){
+	  	if (minutes<'10'){
 	  		$('.fk-minutes').html('0'+minutes);
 	  	}else{
 	  		$('.fk-minutes').html(minutes)
@@ -220,5 +220,12 @@ $(function(){
   	})
   	$('.aside-right-li').mouseleave(function(){
   		$(this).children('.aside-hid').hide()
+  	})
+  	$('.nav-dl').click(function(){
+  		$('.vip').show()
+  		return false;
+  	})
+  	$('.vip-close').click(function(){
+  		$('.vip').hide()
   	})
 })

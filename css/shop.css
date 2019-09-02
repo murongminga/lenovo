@@ -811,3 +811,141 @@ footer a{
 .a-h-4:hover{
 	background-position: -17px -181px;
 }
+.vip{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 99999999;
+	display: none;
+}
+.vip-body{
+	width: 580px;
+	height: 490px;
+	background-color: #fff;
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	margin-left: -290px;
+}
+.user-phone{
+	width: 330px;
+	margin: 0px auto;
+	padding-top: 60px;
+}
+.vip-title{
+	font-size: 30px;
+	text-align: center;
+}
+.phoennumber{
+	height: 43px;
+	width: 316px;
+	margin-top: 30px;
+	outline: none;
+	padding-left: 10px;
+	font-size: 14px;
+}
+input[type=password]{
+	height: 43px;
+	width: 316px;
+	margin-top: 15px;
+	outline: none;
+	padding-left: 10px;
+	font-size: 14px;
+}
+input[type=checkbox]{
+	margin: 15px 5px 15px 0px;
+}
+input[type=submit]{
+	height: 43px;
+	width: 330px;
+	outline: none;
+	border: none;
+	background-color: #e22319;
+	color: #fff;
+	margin-bottom: 15px;
+}
+.vip-left{
+	color: red;
+	font-size: 14px;
+}
+.vip-right{
+	margin-left: 59px;
+}
+.vip-right>a{
+	font-size: 14px;
+	color: #757575;
+}
+.vip-hr{
+	margin-top: 40px;
+}
+.vip-else{
+	width: 100%;
+	border-top: 1px solid #757575;
+	margin-top: 45px;
+	position: relative;
+	text-align: center;
+}
+.vip-else-title{
+	position: absolute;
+	top: -11px;
+	right: 50%;
+	margin-right: -42px;
+	background-color: #fff;
+	font-size: 14px;
+	color: #757575;
+}
+.vip-else>span{
+	display: inline-block;
+	width: 31px;
+	height: 31px;
+	margin-top: 20px;
+}
+.vip-wb,.vip-wx,.vip-zfb{
+	margin-left: 31px;
+}
+.vip-ewm{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.vip-saoma{
+	position: absolute;
+	top: 10px;
+	right: 90px;
+	border: 2px solid #f3d995;
+	background-color: #fefcee;
+	font-size: 12px;
+	padding: 5px 15px;
+}
+.xx{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-image: url('../images/icon-prevent.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+	top: 3px;
+}
+.jiao{
+	border: 5px solid transparent;
+	border-left-color: #f3d995; 
+	position: absolute;
+	top: 21px;
+	right: 80px;
+}
+.jiao2{
+	border: 4px solid transparent;
+	border-left-color: #fefcee; 
+	position: absolute;
+	top: 22px;
+	right: 84px;
+}
+.vip-close{
+	position: absolute;
+	top: -25px;
+	right: -57px;
+}

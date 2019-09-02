@@ -116,6 +116,14 @@ $(function(){
   		$('.buynumber-test').html(n)
   	})
 
+    $('.nav-dl').click(function(){
+      $('.vip').show()
+      return false;
+    })
+    $('.vip-close').click(function(){
+      $('.vip').hide()
+    })
+
   	function aa(){
   		var time11;
   		clearInterval(time11);

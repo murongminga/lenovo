@@ -239,6 +239,14 @@ header{
 	border-radius: 3px;
 	font-size: 13px;
 }
+.warn-box-but-sure2{
+	padding: 2px 35px;
+	background-color: #e3231e;
+	color: #fff;
+	border: 1px solid #e3231e;
+	border-radius: 3px;
+	font-size: 13px;
+}
 .warn-box-but-sure:hover{
 	cursor: pointer;
 }
@@ -298,4 +306,106 @@ header{
 	height: 30px;
 	line-height: 30px;
 	color: black;
+}
+.warningbox2{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -114px;
+	margin-top: -49px;
+	width: 200px;
+	height: 50px;
+	border: 4px solid #ff6600;
+	background-color: #fff;
+	font-size: 13px;
+	line-height: 50px;
+	padding: 20px 10px;
+	border-radius: 10px;
+	display: none;
+}
+.warningbox2>img,.warningbox2>p{
+	float: left;
+}
+.warningbox2>img{
+	margin-right: 10px;
+}
+.footer-link-img{
+	width: 100%;
+}
+.footer-img{
+	width: 100%;
+}
+.footer-nav{
+	width: 100%;
+	padding: 70px 0px 70px 0px;
+	background-color: #fbfbfb;
+}
+.footer-nav-list{
+	float: left;
+	width: 152px;
+}
+.footer-nav-list:nth-child(1){
+	margin-left: 50px;
+}
+.footer-nav-list>dt{
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 18px;
+	font-weight: 600;
+	color: #424242;
+}
+.footer-nav-list>dd{
+	margin-bottom: 12px;
+}
+.footer-nav-list>dd>a{
+	font-size: 13px;
+	line-height: 13px;
+	color: #757575;
+}
+.footer-call{
+	float: left;
+	border-left: 1px solid #ccc;
+	padding-left: 44px;
+}
+.call-number{
+	font-size: 20px;
+	text-align: left;
+	color: #E1140A;
+}
+.call-time{
+	font-size: 12px;
+	color: #757575;
+	text-align: left;
+	line-height: 25px;
+}
+.footer-call-img{
+	display: inline-block;
+	width: 139px;
+	height: 36px;
+	background-image: url('../images/callhover.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.footer-call-img:hover{
+	background-image: url('../images/call.png');
+	cursor: pointer;
+}
+footer{
+	width: 100%;
+	background-color: #272727;
+}
+.copya{
+	float: left;
+	font-size: 12px;
+	line-height: 46px;
+	color: #757575;
+}
+footer a{
+	color: #757575;
+}
+.copyb{
+	float: right;
+	font-size: 12px;
+	line-height: 46px;
+	color: #757575;
 }
