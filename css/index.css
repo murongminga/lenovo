@@ -199,6 +199,9 @@ header a:hover{
 	height: 24px;
 	transform: translateY(7px);
 }
+.n-img2{
+	display: none;
+}
 .hd-childnav1>li>a{
 	color: #616161;
 	font-weight: bold;
@@ -250,13 +253,61 @@ header a:hover{
 	font-size: 18px;
 	font-weight: bolder;
 }
-#cc2{
-	width: 17%;
-	height: 350px;
+.cc2{
+	width: 17% !important;
+	height: 380px !important;
 }
-#cc3{
-	width: 13%;
-	height: 350px;
+.cc3{
+	width: 13% !important;
+	height: 370px !important;
+}
+.cc4{
+	width: 13% !important;
+	height: 360px !important;
+}
+.cc5{
+	width: 13% !important;
+	height: 350px ;
+}
+.cc6{
+	width: 8% !important;
+	height: 450px !important;
+}
+.cc7{
+	width: 13% !important;
+	height: 320px !important;
+}
+.dd1{
+	width: 16% !important;
+	height: 320px !important;
+}
+.dd2{
+	width: 20% !important;
+	height: 320px !important;
+}
+.ff1{
+	width: 11% !important;
+	height: 330px !important;
+}
+.ff2{
+	width: 20% !important;
+	height: 200px !important;
+}
+.ff3{
+	width: 17% !important;
+	height: 350px !important;
+}
+.ff4{
+	width: 20% !important;
+	height: 200px !important;
+}
+.ff5{
+	width: 20% !important;
+	height: 350px !important;
+}
+.ff6{
+	width: 16% !important;
+	height: 30px !important;
 }
 .banner{
 	width: 100%;

@@ -139,8 +139,11 @@ $(function(){
 
 	$('.hd-childnav1>li').hover(function(){
 		$(this).css('border-bottom-color','blue').siblings().css('border-bottom-color','#f2f2f2')
+		$(this).children('a').children('.n-img1').hide().siblings('.n-img2').show()
 	},function(){
 		$('.hd-childnav1>li').eq(0).css('border-bottom-color','blue').siblings().css('border-bottom-color','#f2f2f2')
+		$(this).children('a').children('.n-img2').hide().siblings('.n-img1').show()
+	
 	})
 
 
