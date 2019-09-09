@@ -7,7 +7,9 @@ $(function(){
 
 	var o=0;
 	var p=0
-	$('.banner-right').click(function(){
+	$('.banner-right').click(bt(br,1000))
+	$('.banner-left').click(bt(bl,1000))
+	function br(){
 		o++;
 		p++;
 		$('.banner-img').animate({'margin-left':-o*100+'%'},500,function(){
@@ -20,9 +22,8 @@ $(function(){
 			p=0
 		}
 		$('.banner-dot>li').eq(p).css('background-color','#fff').siblings().css('background-color','#383838')
-
-	})
-	$('.banner-left').click(function(){
+	}
+	function bl(){
 		o--;
 		p--;
 		$('.banner-img').animate({'margin-left':-o*100+'%'},500,function(){
@@ -35,7 +36,17 @@ $(function(){
 			p=9
 		}
 		$('.banner-dot>li').eq(p).css('background-color','#fff').siblings().css('background-color','#383838')
-	})
+	}
+	function bt(fn,time){
+		var startime=new Date();
+		return function(){
+			var item=(new Date()-startime)>=time
+			if (item) {
+				fn.apply(this);
+				startime=new Date()
+			}
+		}
+	}
 	var time
 	function time1(){
 		clearInterval(time)

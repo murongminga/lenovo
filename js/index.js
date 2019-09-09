@@ -17,10 +17,21 @@ $(function(){
 
 	var o=0;
 	var p=0
-	$('.banner-right').click(function(){
+	$('.banner-right').click(bt(br,1000))
+	function bt(fn,time){
+		var stratime=new Date();
+		return function(){
+			var item=(new Date()-stratime) >= time
+			if (item) {
+				fn.apply(this);
+				stratime=new Date()
+			}
+		}
+	}
+	function br(){
 		o++;
 		p++;
-		$('.banner-img').animate({'margin-left':-o*100+'%'},500,function(){
+		$('.banner-img').stop(true).animate({'margin-left':-o*100+'%'},500,function(){
 			if (o>9){
 				$('.banner-img').css('margin-left','0')
 				o=0;
@@ -31,9 +42,8 @@ $(function(){
 		}
 		$('.banner-dot>li').eq(p).addClass('circle').siblings().removeClass('circle')
 		$('.banner-dot>li>i').eq(p).css('background-color','transparent').parents('li').siblings('li').children('i').css('background-color','#fff')
-
-	})
-	$('.banner-left').click(function(){
+	}
+	function bl(){
 		o--;
 		p--;
 		$('.banner-img').animate({'margin-left':-o*100+'%'},500,function(){
@@ -48,7 +58,9 @@ $(function(){
 		$('.banner-dot>li').eq(p).addClass('circle').siblings().removeClass('circle')
 		$('.banner-dot>li>i').eq(p).css('background-color','transparent').parents('li').siblings('li').children('i').css('background-color','#fff')
 
-	})
+	
+	}
+	$('.banner-left').click(bt(bl,1000))
 	var time
 	function time1(){
 		clearInterval(time)
@@ -146,7 +158,11 @@ $(function(){
 	
 	})
 
-
+	$('.sec-product1').mouseenter(function(){
+		var secd=$(this).index()
+		console.log(secd)
+		$('.boxx').eq(secd).show().siblings('.boxx').hide()
+	})
 
 
 
